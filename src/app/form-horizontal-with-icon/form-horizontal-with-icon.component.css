@@ -13,6 +13,29 @@ h5, .h5 {
   
 
 }
+
+
+.error {
+  width: 40%;
+  position: fixed;
+  z-index: 1000000000;
+  background-color: #d9381e;
+  text-align: center;
+  bottom: 10%;
+  left: 30%;
+  padding: 15px;
+  color:white;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+
 .btn {
     display: inline-block;
     font-weight: 400;

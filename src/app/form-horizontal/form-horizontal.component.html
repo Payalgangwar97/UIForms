@@ -1,6 +1,6 @@
 <body>
   <div class="error" [class.show]="error != ''" [class.hide]="error == ''">{{error}}</div>
-    <div class="layout-wrapper layout-content-navbar mt-5" *ngIf="!submitted">
+    <div class="layout-wrapper layout-content-navbar mt-5">
       <div class="layout-container">
         <div class="layout-page">
           <div class="content-wrapper">
@@ -13,7 +13,7 @@
                       <small class="text-muted float-end">Default label</small>
                     </div>
                     <div class="card-body">
-                      <form>
+                      <form >
                         <div class="row mb-3">
                           <label class="col-sm-2 col-form-label" for="basic-default-name">Name</label>
                           <div class="col-sm-10">
@@ -78,7 +78,7 @@
                         </div>
                         <div class="row justify-content-end">
                           <div class="col-sm-10">
-                            <button type="submit" (click)=" onSubmit()" class="btn btn-primary">Send</button>
+                            <button type="button" (click)=" onSubmit()" class="btn btn-primary">Send</button>
                           </div>
                         </div>
                       </form>

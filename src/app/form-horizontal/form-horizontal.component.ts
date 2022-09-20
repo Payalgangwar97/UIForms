@@ -18,7 +18,7 @@ export class FormHorizontalComponent implements OnInit {
 
   submitted: boolean | undefined;
 
-  error: string | undefined;
+  error: string | undefined = "";
 
   constructor() { }
 
@@ -69,6 +69,7 @@ export class FormHorizontalComponent implements OnInit {
   }
 
   validate_form() {
+    this.error = "";
     let form_data:any = {};
 
     if (!this.validate_name()) {
@@ -106,22 +107,7 @@ export class FormHorizontalComponent implements OnInit {
       msg: this.msg
     }
   }
-
-  // send(){
-
-  //   let data = {
-
-  //     name:this.name,
-  //     company: this.company,
-  //     email: this.email,
-  //     phone: this.phone,
-  //     msg: this.msg,
-  //   }
-  //   console.log(data);
-
-
-  // }
-
+  
   onSubmit() {
 
     let data = {
@@ -132,12 +118,12 @@ export class FormHorizontalComponent implements OnInit {
       phone: this.phone,
       msg: this.msg,
     }
-    console.log(data);
 
     let validated_form = this.validate_form();
     if (validated_form) {
       this.form_submitted.emit(validated_form)
       this.submitted = true;
+      console.log(data);
     }
     
 

@@ -1,3 +1,5 @@
+
+<div class="error" [class.show]="error != ''" [class.hide]="error == ''">{{error}}</div>
 <div class="layout-wrapper layout-content-navbar mt-5">
         <div class="layout-container">
             <div class="layout-page">
@@ -37,7 +39,7 @@
                                                         <input type="text" id="basic-icon-default-company"
                                                             class="form-control" placeholder="ACME Inc."
                                                             aria-label="ACME Inc."
-                                                            aria-describedby="basic-icon-default-company2" [(ngModel)]="company_name" [ngModelOptions]="{standalone: true}" />
+                                                            aria-describedby="basic-icon-default-company2" [(ngModel)]="company" [ngModelOptions]="{standalone: true}" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,7 +89,7 @@
                                             </div>
                                             <div class="row justify-content-end">
                                                 <div class="col-sm-10">
-                                                    <button type="submit" (click)="send()" class="btn btn-primary">Send</button>
+                                                    <button type="button" (click)="onSubmit()" class="btn btn-primary">Send</button>
                                                 </div>
                                             </div>
                                         </form>
