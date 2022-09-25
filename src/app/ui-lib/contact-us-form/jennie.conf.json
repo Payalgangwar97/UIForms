@@ -1,0 +1,48 @@
+{
+    "_id": 142,
+    "created_by": {
+        "_id": 1,
+        "email": "saurabh@ask-jennie.com",
+        "fullname": "Saurabh Pandey",
+        "city": "Gurgaon",
+        "bio": "Full Stack Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1664085646-8387766.png",
+    "app_name": "contact-us-form",
+    "app_title": "Contact Us form with validation",
+    "app_description": "Contact us form compatible on bootstrap, The theme contains validation and output event that returns validated json",
+    "tag": "Forms",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/contact-us-form"
+        },
+        {
+            "event_type": "download-files",
+            "files": [
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/contact-us-form/contact-us-form.component.css",
+                    "out_path": "src/app/ui-lib/contact-us-form/contact-us-form.component.css"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/contact-us-form/contact-us-form.component.ts",
+                    "out_path": "src/app/ui-lib/contact-us-form/contact-us-form.component.ts"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/contact-us-form/contact-us-form.component.html",
+                    "out_path": "src/app/ui-lib/contact-us-form/contact-us-form.component.html"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        "bootstrap-5"
+    ],
+    "readme": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/contact-us-form/readme.md",
+    "is_active": false,
+    "created_on": "2022-09-02T20:23:50.143502Z",
+    "updated_on": "2022-09-25T06:00:47.997767Z"
+}

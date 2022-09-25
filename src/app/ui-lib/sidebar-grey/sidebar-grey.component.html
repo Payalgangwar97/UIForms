@@ -1,0 +1,17 @@
+<div class="sidebar-grey">
+    <div class="profile">
+        <img class="profile-image" src="assets/man.png">
+    </div>
+    <ul class="sidebar-grey-ul">
+        <a (click)="go_to_link(element)" *ngFor="let element of menu;">
+            <li class="sidebar-grey-li" [class.active]="element.is_active">
+                <i class="fas {{element.icon_class}}" *ngIf="element.icon_class"></i>
+                {{element.name}}
+            </li>
+        </a>
+    </ul>
+    <button class="btn btn-danger">
+        <i class="fas fa-sign-out-alt"></i>
+        Logout
+    </button>
+</div>

@@ -1,0 +1,48 @@
+{
+    "_id": 119,
+    "created_by": {
+        "_id": 3,
+        "email": "payal@ask-jennie.com",
+        "fullname": "Payal Gangwar",
+        "city": "Noida",
+        "bio": "Software Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1664123597-8991609.png",
+    "app_name": "form-horizontal-with-icon",
+    "app_title": "Form horizontal with icon",
+    "app_description": "create form horizontal with icon component",
+    "tag": "Forms",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/form-horizontal-with-icon"
+        },
+        {
+            "event_type": "download-files",
+            "files": [
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-horizontal-with-icon/form-horizontal-with-icon.component.css",
+                    "out_path": "src/app/ui-lib/form-horizontal-with-icon/form-horizontal-with-icon.component.css"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-horizontal-with-icon/form-horizontal-with-icon.component.ts",
+                    "out_path": "src/app/ui-lib/form-horizontal-with-icon/form-horizontal-with-icon.component.ts"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-horizontal-with-icon/form-horizontal-with-icon.component.html",
+                    "out_path": "src/app/ui-lib/form-horizontal-with-icon/form-horizontal-with-icon.component.html"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        "bootstrap-5"
+    ],
+    "readme": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-horizontal-with-icon/readme.md",
+    "is_active": false,
+    "created_on": "2022-08-07T16:33:46.738118Z",
+    "updated_on": "2022-09-25T16:33:19.102247Z"
+}

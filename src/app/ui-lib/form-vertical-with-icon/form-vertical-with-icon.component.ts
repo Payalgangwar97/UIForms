@@ -8,9 +8,9 @@ import { Component,EventEmitter, OnInit,Output,Input } from '@angular/core';
 export class FormVerticalWithIconComponent implements OnInit {
 
   fullname = "";
-  Company = "";
+  company = "";
   email = "";
-  phone = "";
+  phone_number = "";
   message = "";
   
   @Input() MIN_LENGTH_MESSAGE = 50;
@@ -19,7 +19,6 @@ export class FormVerticalWithIconComponent implements OnInit {
   submitted: boolean | undefined;
 
   error: string | undefined = "";
-
 
   constructor() { }
 
@@ -43,15 +42,15 @@ export class FormVerticalWithIconComponent implements OnInit {
     return true;
   }
 
-  validate_Company() {
-    if (this.Company.length < 3) {
+  validate_company() {
+    if (this.company.length < 3) {
       return false;
     }
     return true;
   }
 
   validate_phone() {
-    if (this.phone.toString().length == 10) {
+    if (this.phone_number.toString().length == 10) {
       return true;
     }
     return false;
@@ -65,7 +64,7 @@ export class FormVerticalWithIconComponent implements OnInit {
   }
 
   raise_error(message:string) {
-    this.error = this.message;
+    this.error = message;
     setTimeout(() => {this.error = "";}, 1500);
   }
 
@@ -78,7 +77,7 @@ export class FormVerticalWithIconComponent implements OnInit {
       return false;
     }
 
-    if (!this.validate_Company()) {
+    if (!this.validate_company()) {
       this.raise_error("Invalid Company name") 
       return false;
     }
@@ -102,9 +101,9 @@ export class FormVerticalWithIconComponent implements OnInit {
 
     return {
       email: this.email,
-      phone: this.phone,
+      phone: this.phone_number,
       fullname: this.fullname,
-      Company: this.Company,
+      company: this.company,
       message: this.message
     }
   }
@@ -114,9 +113,9 @@ export class FormVerticalWithIconComponent implements OnInit {
     let data = {
 
       fullname:this.fullname,
-      Company: this.Company,
+      company: this.company,
       email: this.email,
-      phone: this.phone,
+      phone_number: this.phone_number,
       message: this.message,
     }
 

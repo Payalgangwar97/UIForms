@@ -1,0 +1,48 @@
+{
+    "_id": 180,
+    "created_by": {
+        "_id": 1,
+        "email": "saurabh@ask-jennie.com",
+        "fullname": "Saurabh Pandey",
+        "city": "Gurgaon",
+        "bio": "Full Stack Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1664095059-5297682.png",
+    "app_name": "sidebar-grey",
+    "app_title": "Grey Sidebar for CRM",
+    "app_description": "Grey Sidebar for generic crms with proper option to map pages and trasverse to the link if link is given in option",
+    "tag": "sidebar",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/sidebar-grey"
+        },
+        {
+            "event_type": "download-files",
+            "files": [
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/sidebar-grey/sidebar-grey.component.css",
+                    "out_path": "src/app/ui-lib/sidebar-grey/sidebar-grey.component.css"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/sidebar-grey/sidebar-grey.component.ts",
+                    "out_path": "src/app/ui-lib/sidebar-grey/sidebar-grey.component.ts"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/sidebar-grey/sidebar-grey.component.html",
+                    "out_path": "src/app/ui-lib/sidebar-grey/sidebar-grey.component.html"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        "bootstrap-5"
+    ],
+    "readme": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/sidebar-grey/readme.md",
+    "is_active": false,
+    "created_on": "2022-09-25T08:37:40.511495Z",
+    "updated_on": "2022-09-25T08:37:40.511537Z"
+}

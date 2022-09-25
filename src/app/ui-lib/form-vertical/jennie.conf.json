@@ -1,0 +1,48 @@
+{
+    "_id": 116,
+    "created_by": {
+        "_id": 3,
+        "email": "payal@ask-jennie.com",
+        "fullname": "Payal Gangwar",
+        "city": "Noida",
+        "bio": "Software Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1664124239-442862.png",
+    "app_name": "form-vertical",
+    "app_title": "Form Vertical",
+    "app_description": "create vertical form",
+    "tag": "Forms",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/form-vertical"
+        },
+        {
+            "event_type": "download-files",
+            "files": [
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-vertical/form-vertical.component.css",
+                    "out_path": "src/app/ui-lib/form-vertical/form-vertical.component.css"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-vertical/form-vertical.component.ts",
+                    "out_path": "src/app/ui-lib/form-vertical/form-vertical.component.ts"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-vertical/form-vertical.component.html",
+                    "out_path": "src/app/ui-lib/form-vertical/form-vertical.component.html"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        "bootstrap-5"
+    ],
+    "readme": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-vertical/readme.md",
+    "is_active": false,
+    "created_on": "2022-08-07T08:41:05.707532Z",
+    "updated_on": "2022-09-25T16:44:00.537841Z"
+}

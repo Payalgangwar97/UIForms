@@ -1,4 +1,4 @@
-<div class="error" [class.show]="error != ''" [class.hide]="error == ''">{{error}}</div> 
+<div class="error" [class.show]="error != ''" [class.hide]="error == ''">{{error}}</div>
     <div class="layout-wrapper layout-content-navbar mt-5">
         <div class="layout-container">
             <div class="layout-page">
@@ -32,7 +32,7 @@
                                                     <input type="text" id="basic-icon-default-company"
                                                         class="form-control" placeholder="ACME Inc."
                                                         aria-label="ACME Inc."
-                                                        aria-describedby="basic-icon-default-company2" [(ngModel)]="Company" [ngModelOptions]="{standalone: true}" />
+                                                        aria-describedby="basic-icon-default-company2" [(ngModel)]="company" [ngModelOptions]="{standalone: true}" />
                                                 </div>
                                             </div>
                                             <div class="mb-3">
@@ -58,7 +58,7 @@
                                                     <input type="text" id="basic-icon-default-phone"
                                                         class="form-control phone-mask" placeholder="658 799 8941"
                                                         aria-label="658 799 8941"
-                                                        aria-describedby="basic-icon-default-phone2" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" />
+                                                        aria-describedby="basic-icon-default-phone2" [(ngModel)]="phone_number" [ngModelOptions]="{standalone: true}" />
                                                 </div>
                                             </div>
                                             <div class="mb-3">

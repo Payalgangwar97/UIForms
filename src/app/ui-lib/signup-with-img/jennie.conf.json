@@ -1,0 +1,48 @@
+{
+    "_id": 50,
+    "created_by": {
+        "_id": 3,
+        "email": "payal@ask-jennie.com",
+        "fullname": "Payal Gangwar",
+        "city": "Noida",
+        "bio": "Software Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1664126970-8896368.png",
+    "app_name": "signup-with-img",
+    "app_title": "Signup with image",
+    "app_description": "Bootstrap based Signup Component with image.",
+    "tag": "SignupPage",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/signup-with-img"
+        },
+        {
+            "event_type": "download-files",
+            "files": [
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signup-with-img/signup-with-img.component.css",
+                    "out_path": "src/app/ui-lib/signup-with-img/signup-with-img.component.css"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signup-with-img/signup-with-img.component.ts",
+                    "out_path": "src/app/ui-lib/signup-with-img/signup-with-img.component.ts"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signup-with-img/signup-with-img.component.html",
+                    "out_path": "src/app/ui-lib/signup-with-img/signup-with-img.component.html"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        "bootstrap-5"
+    ],
+    "readme": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/signup-with-img/readme.md",
+    "is_active": false,
+    "created_on": "2022-06-28T14:04:27.182726Z",
+    "updated_on": "2022-09-25T17:29:33.842489Z"
+}

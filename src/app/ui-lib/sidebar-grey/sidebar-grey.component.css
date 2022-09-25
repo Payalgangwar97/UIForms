@@ -1,0 +1,65 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css";
+
+.sidebar-grey {
+    width: max(300px, ((100vw - 910px) / 2) - 0px);
+    background-color: #F4F7F9;
+    height: 100vh;
+    border-right: 1px solid rgba(211,220,228,1.00);
+    text-align: center;
+}
+
+.sidebar-grey-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    height: 60vh;
+    text-align: left;
+}
+
+.sidebar-grey-ul a {
+    cursor: pointer;
+}
+
+.sidebar-grey-li {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    color: rgba(92,105,117,1.00);
+    text-decoration: none;
+    border: 1px solid #F4F7F9;
+}
+
+.sidebar-grey-li.active {
+    background-color: white!important;
+    border: 1px solid rgba(211,220,228,1.00);
+}
+
+.sidebar-grey-li:hover {
+    background-color: rgba(236,239,241,1.00);
+}
+
+.sidebar-grey-li i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+button i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile {
+    width: 100%;
+    padding: 15% 25%;
+}
+
+.profile-image {
+    width: 100%;
+}

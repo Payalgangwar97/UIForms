@@ -1,0 +1,48 @@
+{
+    "_id": 118,
+    "created_by": {
+        "_id": 3,
+        "email": "payal@ask-jennie.com",
+        "fullname": "Payal Gangwar",
+        "city": "Noida",
+        "bio": "Software Developer",
+        "is_active": 1
+    },
+    "app_image": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/images/1664121928-2339075.png",
+    "app_name": "form-horizontal",
+    "app_title": "Form-Horizontal",
+    "app_description": "create horizontal form component",
+    "tag": "Forms",
+    "stack": "angular",
+    "type": "angular-ui-lib",
+    "automation_conf": [
+        {
+            "event_type": "create-angular-component",
+            "component_name": "ui-lib/form-horizontal"
+        },
+        {
+            "event_type": "download-files",
+            "files": [
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-horizontal/form-horizontal.component.css",
+                    "out_path": "src/app/ui-lib/form-horizontal/form-horizontal.component.css"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-horizontal/form-horizontal.component.ts",
+                    "out_path": "src/app/ui-lib/form-horizontal/form-horizontal.component.ts"
+                },
+                {
+                    "file_link": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-horizontal/form-horizontal.component.html",
+                    "out_path": "src/app/ui-lib/form-horizontal/form-horizontal.component.html"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        "bootstrap-5"
+    ],
+    "readme": "https://s3.ap-south-1.amazonaws.com/cdn.jennie/angular/ui-lib/form-horizontal/readme.md",
+    "is_active": false,
+    "created_on": "2022-08-07T16:31:33.561553Z",
+    "updated_on": "2022-09-25T16:05:29.302517Z"
+}
